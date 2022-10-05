@@ -1,0 +1,59 @@
+:root {
+	/* Primary */
+
+	--clr-Cyan: hsl(179, 62%, 43%);
+	--clr-Bright-Yellow: hsl(71, 73%, 54%);
+
+	/* Neutral */
+
+	--clr-Light-Gray: hsl(204, 43%, 93%);
+	--clr-Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+html {
+	font-family: 'Karla', sans-serif;
+	font-size: 16px;
+}
+
+body {
+	font-size: 0.875rem;
+	font-weight: 400;
+	background-color: var(--clr-Light-Gray);
+	min-height: 100vh;
+}
+h2 {
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: var(--clr-Cyan);
+}
+h3 {
+	font-size: 0.9375rem;
+}
+
+.card {
+	display: grid;
+
+	margin: 3rem;
+	max-width: 43rem;
+	background: white;
+	border: 2px solid yellow;
+}
+
+.card__top {
+	border: 4px solid red;
+}
+
+.card__sub {
+	border: 2px solid blue;
+}
+
+.card__info {
+	border: 2px solid blues;
+}
+.card__info {
+	border: 4px solid green;
+}
+
+.col {
+	display: flex;
+}
