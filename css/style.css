@@ -29,6 +29,7 @@ body {
 	font-size: 0.875rem;
 	font-weight: 400;
 	background-color: var(--clr-Light-Gray);
+	min-height: 100vh;
 }
 
 h2 {
@@ -40,6 +41,7 @@ h2 {
 h3 {
 	font-size: 1.125rem;
 	margin-block: 1rem;
+	color: #fff;
 }
 
 h3,
@@ -50,8 +52,15 @@ p {
 p {
 	color: var(--clr-Light-Gray);
 }
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
 li {
 	list-style: none;
+	opacity: 0.8;
 }
 
 .col {
@@ -82,7 +91,7 @@ li {
 
 .hero__description {
 	color: var(--clr-Grayish-Blue);
-	line-height: 2.2;
+	line-height: 1.5rem;
 }
 
 .subscription {
@@ -92,7 +101,7 @@ li {
 
 .subscription p {
 	font-size: 1rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .subscription__price {
@@ -109,16 +118,25 @@ li {
 .subscription_btn {
 	background: var(--clr-Bright-Yellow);
 	color: #fff;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 	display: inline-block;
 	border-radius: 5px;
 	border: none;
 	font-size: 1rem;
-	padding: 1rem 5em;
+	padding: 1rem 5.5em;
 	text-align: center;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
 }
 
 .why-us {
 	background: var(--clr-secondaryBG);
 	color: var(--clr-Light-Gray);
+	line-height: 1.2rem;
+	border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		grid-template-rows: repeat(4, 1fr);
+	}
 }
